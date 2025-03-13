@@ -1,6 +1,4 @@
 python-decouple
-motor[srv]
-pymongo
 dnspython
 lxml_html_clean
 aiohttp
