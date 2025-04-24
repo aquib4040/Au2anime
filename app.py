@@ -1,11 +1,14 @@
-from flask import Flask
-app = Flask(__name__)
+from aiohttp import web
 
-@app.route('/')
-def hello_world():
-    return 'Hello from Tech VJ'
+routes = web.RouteTableDef()
 
 
-if __name__ == "__main__":
-    app.run()
-  
+@routes.get("/", allow_head=True)
+async def root_route_handler(request):
+    return web.json_response("https://t.me/codeflix_bots")
+
+
+async def web_server():
+    web_app = web.Application(client_max_size=30000000)
+    web_app.add_routes(routes)
+    return web_app
