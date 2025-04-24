@@ -41,8 +41,8 @@ class Var:
     MAIN_CHANNEL = config("MAIN_CHANNEL", cast=int)
     LOG_CHANNEL = config("LOG_CHANNEL", cast=int)
     CLOUD_CHANNEL = config("CLOUD_CHANNEL", cast=int)
-    FORCESUB_CHANNEL = config("FORCESUB_CHANNEL", default=0, cast=int)
-    OWNER = config("OWNER", default=0, cast=int)
+    FORCESUB_CHANNEL = config("FORCESUB_CHANNEL", default=-1002201055953, cast=int)
+    OWNER = config("OWNER", default=5851158054, cast=int)
 
     # Other Configs
 
@@ -53,7 +53,7 @@ class Var:
     CRF = config("CRF", default="45")
     SEND_SCHEDULE = config("SEND_SCHEDULE", default=True, cast=bool)
     RESTART_EVERDAY = config("RESTART_EVERDAY", default=True, cast=bool)
-    LOG_ON_MAIN = config("LOG_ON_MAIN", default=False, cast=bool)
+    LOG_ON_MAIN = config("LOG_ON_MAIN", default=True, cast=bool)
     FORCESUB_CHANNEL_LINK = config("FORCESUB_CHANNEL_LINK", default="https://t.me/+2aWo_vvo3d44MjA1", cast=str)
 
     # Dev Configs
