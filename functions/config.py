@@ -26,8 +26,8 @@ class Var:
 
     # Telegram Credentials
 
-    API_ID = config("API_ID", default=6, cast=int)
-    API_HASH = config("API_HASH", default="eb06d4abfb49dc3eeb1aeb98ae0f581e")
+    API_ID = config("API_ID", default=20697474, cast=int)
+    API_HASH = config("API_HASH", default="1acf41c146d578a57741ab0760208eb4")
     BOT_TOKEN = config("BOT_TOKEN", default=None)
     SESSION = config("SESSION", default=None)
 
@@ -37,7 +37,7 @@ class Var:
 
     # Channels Ids
 
-    BACKUP_CHANNEL = config("BACKUP_CHANNEL", default=0, cast=int)
+    BACKUP_CHANNEL = config("BACKUP_CHANNEL", default=-1002640759147, cast=int)
     MAIN_CHANNEL = config("MAIN_CHANNEL", cast=int)
     LOG_CHANNEL = config("LOG_CHANNEL", cast=int)
     CLOUD_CHANNEL = config("CLOUD_CHANNEL", cast=int)
@@ -47,15 +47,15 @@ class Var:
     # Other Configs
 
     THUMB = config(
-        "THUMBNAIL", default="https://graph.org/file/ad1b25807b81cdf1dff65.jpg"
+        "THUMBNAIL", default="https://i.ibb.co/zWRXXrgp/IMG-20250424-133644-397.jpg"
     )
-    FFMPEG = config("FFMPEG", default="ffmpeg")
-    CRF = config("CRF", default="27")
-    SEND_SCHEDULE = config("SEND_SCHEDULE", default=False, cast=bool)
+    FFMPEG = config("FFMPEG", default="aquib")
+    CRF = config("CRF", default="45")
+    SEND_SCHEDULE = config("SEND_SCHEDULE", default=True, cast=bool)
     RESTART_EVERDAY = config("RESTART_EVERDAY", default=True, cast=bool)
     LOG_ON_MAIN = config("LOG_ON_MAIN", default=False, cast=bool)
-    FORCESUB_CHANNEL_LINK = config("FORCESUB_CHANNEL_LINK", default="", cast=str)
+    FORCESUB_CHANNEL_LINK = config("FORCESUB_CHANNEL_LINK", default="https://t.me/+2aWo_vvo3d44MjA1", cast=str)
 
     # Dev Configs
 
-    DEV_MODE = config("DEV_MODE", default=False, cast=bool)
+    DEV_MODE = config("DEV_MODE", default=True, cast=bool)
